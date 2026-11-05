@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The graphite body from the first frame, so a cold start never flashes grey. -->
+    <style name="Theme.Decibel" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/icon_body</item>
+    </style>
+</resources>

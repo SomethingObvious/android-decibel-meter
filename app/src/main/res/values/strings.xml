@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Decibel</string>
+    <string name="channel_name">Measuring</string>
+    <string name="channel_description">The level while Decibel keeps measuring with the app closed.</string>
+    <string name="notification_title">Decibel is measuring</string>
+    <string name="notification_starting">Opening the mic</string>
+    <string name="notification_stop">Stop</string>
+    <string name="notification_text">%1$s %2$s dB · %3$s %4$s dB · %5$s</string>
+
+    <string name="unit_db">dB</string>
+    <string name="unit_percent" formatted="false">%</string>
+    <string name="db_value">%1$s dB</string>
+    <string name="db_whole">%1$d dB</string>
+
+    <string name="band_very_quiet">VERY QUIET</string>
+    <string name="band_quiet">QUIET ROOM</string>
+    <string name="band_conversation">CONVERSATION</string>
+    <string name="band_loud">LOUD</string>
+    <string name="band_harmful_hours">HARMFUL OVER HOURS</string>
+    <string name="band_harmful_minutes">HARMFUL IN MINUTES</string>
+
+    <plurals name="span_hours">
+        <item quantity="one">%1$d H</item>
+        <item quantity="other">%1$d H</item>
+    </plurals>
+    <plurals name="span_minutes">
+        <item quantity="one">%1$d MIN</item>
+        <item quantity="other">%1$d MIN</item>
+    </plurals>
+    <string name="span_hours_minutes">%1$s %2$s</string>
+    <string name="span_under_minute">UNDER 1 MIN</string>
+
+    <string name="dose_reached">DAILY DOSE REACHED</string>
+    <string name="dose_safe">SAFE ALL DAY AT THIS LEVEL</string>
+    <string name="dose_full_in">FULL IN %1$s AT THIS LEVEL</string>
+    <string name="param_dose">DOSE</string>
+    <string name="param_decibels">%1$s, %2$s decibels</string>
+    <string name="param_percent">%1$s, %2$s percent</string>
+
+    <string name="response_fast">Fast</string>
+    <string name="response_slow">Slow</string>
+    <string name="detail_fast">%1$s · FAST</string>
+    <string name="detail_slow">%1$s · SLOW</string>
+    <string name="spoken_setting_fast">%1$s weighted, fast</string>
+    <string name="spoken_setting_slow">%1$s weighted, slow</string>
+    <string name="spoken_max_fast">%1$s weighted fast maximum</string>
+    <string name="spoken_max_slow">%1$s weighted slow maximum</string>
+    <string name="spoken_min_fast">%1$s weighted fast minimum</string>
+    <string name="spoken_min_slow">%1$s weighted slow minimum</string>
+    <string name="spoken_leq">%1$s weighted equivalent level</string>
+    <string name="spoken_peak">%1$s weighted peak</string>
+    <string name="spoken_dose">Noise dose</string>
+    <string name="spoken_history">Level history, %1$s</string>
+    <string name="window_minute">1 MIN</string>
+    <string name="window_ten_minutes">10 MIN</string>
+    <string name="window_hour">1 H</string>
+    <string name="window_session">ALL</string>
+    <string name="source_mic">MIC</string>
+    <string name="source_unprocessed">UNPROCESSED</string>
+    <string name="source_voice">VOICE PATH</string>
+
+    <string name="mic_needed">Decibel needs the mic to measure.</string>
+    <string name="session_cleared">Session cleared</string>
+    <string name="undo">Undo</string>
+    <string name="nothing_to_save">Nothing to save yet. The log fills in once a second.</string>
+    <string name="saved">Saved to Downloads/Decibel</string>
+    <string name="share">Share</string>
+    <string name="save_failed">Couldn’t save the log. Check that the phone has room, then try again.</string>
+
+    <string name="status_at">AT %1$s</string>
+    <string name="status_run">RUN %1$s</string>
+    <string name="status_paused">PAUSED %1$s</string>
+    <string name="flag_mic_busy">MIC BUSY</string>
+    <string name="flag_gap">GAP</string>
+    <string name="flag_over">OVER</string>
+    <string name="flag_alert">ALERT</string>
+    <string name="holding">Holding</string>
+    <string name="spoken_mic_busy">Another app has the mic</string>
+    <string name="spoken_gap">Part of the log is missing because the mic was taken</string>
+    <string name="spoken_over">Input went over range, so readings are too low</string>
+    <string name="spoken_alert">Went over the alert level</string>
+    <string name="clear_warnings">Clear warnings</string>
+    <string name="spoken_at">At %1$s, %2$s</string>
+    <string name="spoken_level">%1$s decibels, %2$s</string>
+    <string name="no_reading">NO READING</string>
+    <string name="spoken_no_reading">No reading yet</string>
+    <string name="spoken_sentences">%1$s. %2$s</string>
+    <string name="spoken_reading">%1$s, %2$s</string>
+
+    <string name="no_mic_title">NO MIC ACCESS</string>
+    <string name="no_mic_body">Press RUN to let Decibel use the mic.</string>
+    <string name="mic_failed_title">MIC WON’T OPEN</string>
+    <string name="other_mic_title">PHONE MIC ONLY</string>
+    <string name="other_mic_body">The readings are set up for the phone’s own mic. Unplug the headset or USB mic, then press RUN.</string>
+    <string name="notification_warned">%1$s · %2$s</string>
+    <string name="mic_failed_body">Another app may be holding it. Press RUN to try again.</string>
+    <string name="log_full_title">LOG FULL</string>
+    <string name="log_full_body">48 hours is the most one session holds. Save it, then reset to start another.</string>
+
+    <string name="sound_level_meter">SOUND LEVEL METER</string>
+    <string name="faceplate_cal">CAL %1$s dB</string>
+    <string name="calibrate">Calibrate</string>
+
+    <string name="history">HISTORY %1$s</string>
+    <string name="history_description">Level history. Drag across it to read any moment.</string>
+    <string name="history_earlier">Read an earlier moment</string>
+    <string name="history_later">Read a later moment</string>
+    <string name="history_live">Back to the live level</string>
+
+    <string name="key_weighting">A C Z weighting</string>
+    <string name="key_weighted">%1$s weighted</string>
+    <string name="key_response">F S response</string>
+    <string name="hold_label">HOLD</string>
+    <string name="key_hold">Hold, freezes the reading</string>
+    <string name="key_off">Off</string>
+    <string name="key_menu_label">MENU</string>
+    <string name="key_menu">Menu, settings and how it measures</string>
+    <string name="key_reset_label">RESET</string>
+    <string name="key_reset">Reset, clears the session</string>
+    <string name="key_save_label">SAVE</string>
+    <string name="key_save">Save, writes the log to a CSV file</string>
+    <string name="key_cal_label">CAL</string>
+    <string name="key_cal">Cal, calibrates the mic</string>
+    <string name="key_pause_label">PAUSE</string>
+    <string name="key_pause">Pause, stops measuring</string>
+    <string name="key_run_label">RUN</string>
+    <string name="key_run">Run, starts measuring</string>
+
+    <string name="settings">Settings</string>
+    <string name="background_title">Keep measuring when I leave the app</string>
+    <string name="background_detail">A notification shows the level and has a Stop button. Off, measuring pauses when you leave and picks up when you come back.</string>
+    <string name="alert_title">Alert above a level</string>
+    <string name="alert_detail">Buzzes once each time the level goes over, and ALERT stays lit until you tap it.</string>
+    <string name="alert_level">Alert level</string>
+    <plurals name="alert_decibels">
+        <item quantity="one">%1$d decibel</item>
+        <item quantity="other">%1$d decibels</item>
+    </plurals>
+    <string name="how_title">How it measures</string>
+    <string name="how_filters">The raw mic is read at 48 kHz, filtered for A, C and Z weighting, then averaged over 125 ms for Fast or 1 s for Slow. Leq averages the energy, not the decibels, so one loud minute counts for what it was.</string>
+    <string name="how_dose">The dose follows NIOSH. 85 dBA for 8 hours is a full day, and every 3 dB louder halves the time.</string>
+    <string name="how_over">OVER lights when the input runs out of range, either the converter’s or the mic’s own, which on most phones starts around 120 dB. Anything measured while it is lit reads too low.</string>
+    <string name="how_taps">Taps on the screen reach the mic, so the moment around each one is left out of the figures. If another app takes the mic, that stretch is left out too and GAP lights. The alert buzz is counted, since leaving it out would hide the sound that set it off.</string>
+    <string name="how_certified">A phone is not a certified meter. For absolute levels, calibrate against one you trust.</string>
+
+    <string name="calibration_title">Calibration</string>
+    <string name="match_title">Match a meter you trust</string>
+    <string name="match_how">Put the phone beside it in a steady sound, set both to %1$s weighting and Slow, then type what it reads.</string>
+    <string name="it_reads">It reads</string>
+    <string name="match">Match</string>
+    <string name="phone_reads">This phone reads %1$s dB %2$s right now.</string>
+    <string name="run_first">Press RUN first. Matching needs a live reading.</string>
+    <string name="default_cal">Back to the default</string>
+    <string name="default_cal_mic">The default trusts the mic to meet Android’s sensitivity target.</string>
+    <string name="default_cal_unprocessed">The default trusts the mic to meet Android’s sensitivity target on the unprocessed path.</string>
+    <string name="default_cal_voice">The default trusts the mic to meet Android’s sensitivity target on the voice path.</string>
+    <string name="reference_range">Type a level between 0 and 200 dB.</string>
+</resources>

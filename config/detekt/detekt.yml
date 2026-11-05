@@ -1,0 +1,52 @@
+# Builds on detekt's defaults with allRules on, so every rule runs unless it is switched off here with a reason.
+config:
+  warningsAsErrors: true
+
+comments:
+  # No licence headers in source files.
+  AbsentOrWrongFileLicense:
+    active: false
+  # An app has no public API, and comments are only for a why that the code cannot show.
+  UndocumentedPublicClass:
+    active: false
+  UndocumentedPublicFunction:
+    active: false
+  UndocumentedPublicProperty:
+    active: false
+
+complexity:
+  # Composables take a modifier, colours and slots that all default, so only required parameters count.
+  LongParameterList:
+    ignoreDefaultParameters: true
+
+style:
+  # Compose passes almost everything as a named argument, which the default would let through.
+  MagicNumber:
+    ignoreNamedArgument: false
+
+potential-bugs:
+  # Swapping the arguments of a symmetric function changes nothing, so naming them adds only noise.
+  UnnamedParameterUse:
+    ignoreFunctionCall:
+      - 'kotlin.math.max'
+      - 'kotlin.math.min'
+      - 'kotlin.math.hypot'
+      - 'kotlin.comparisons.maxOf'
+      - 'kotlin.comparisons.minOf'
+
+naming:
+  # Composables are named like types.
+  FunctionNaming:
+    ignoreAnnotated: ['Composable']
+  # Test names are sentences.
+  FunctionNameMaxLength:
+    ignoreAnnotated: ['Test']
+
+ktlint:
+  code_style: 'ktlint_official'
+  # Duplicates naming>FunctionNaming, which can be told about Composable.
+  FunctionName:
+    active: false
+  # The wrapper's default contradicts MultilineExpressionWrapping, so a multiline body fails one rule either way.
+  FunctionSignature:
+    functionBodyExpressionWrapping: 'multiline'

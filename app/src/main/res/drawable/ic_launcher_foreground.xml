@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- The LCD glass, inside the 66dp safe zone. -->
+    <path
+        android:fillColor="#FFC8D2BE"
+        android:pathData="M33,38h42a3,3 0,0 1,3 3v26a3,3 0,0 1,-3 3h-42a3,3 0,0 1,-3 -3v-26a3,3 0,0 1,3 -3z" />
+    <!-- A bar graph lit to two thirds, with the max hold segment further along. -->
+    <path
+        android:fillColor="#FF1A2016"
+        android:pathData="M35,50h3v12h-3zM40,50h3v12h-3zM45,50h3v12h-3zM50,50h3v12h-3zM55,50h3v12h-3zM60,50h3v12h-3zM68,50h3v12h-3z" />
+    <path
+        android:fillColor="#331A2016"
+        android:pathData="M65,50h3v12h-3zM70,50h3v12h-3z" />
+    <path
+        android:fillColor="#FFF0A020"
+        android:pathData="M35,42h10v4h-10z" />
+</vector>

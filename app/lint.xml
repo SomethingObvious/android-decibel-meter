@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <!-- These fail the build the day Gradle, AGP or a library ships a release, whatever the commit changed. Upgrades are a deliberate chore instead. -->
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="NewerVersionAvailable" severity="ignore" />
+    <!-- Private composables called from setContent are normal Compose, and the accessor costs nothing that matters here. -->
+    <issue id="SyntheticAccessor" severity="ignore" />
+</lint>

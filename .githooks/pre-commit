@@ -1,0 +1,14 @@
+#!/bin/sh
+set -eu
+
+if command -v pre-commit >/dev/null 2>&1; then
+    pre-commit run
+fi
+if command -v codespell >/dev/null 2>&1; then
+    git ls-files -z | xargs -0 codespell
+fi
+if command -v gitleaks >/dev/null 2>&1; then
+    gitleaks git --pre-commit --staged --redact --no-banner
+fi
+
+./gradlew --quiet detektMain detektTest lint testDebugUnitTest
